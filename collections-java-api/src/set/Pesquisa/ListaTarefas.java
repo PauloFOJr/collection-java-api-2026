@@ -2,7 +2,6 @@ package set.Pesquisa;
 
 import set.Tarefa;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -79,7 +78,6 @@ public class ListaTarefas {
     }
 
     public void limparListaTarefas() {
-       Set<Tarefa> limparLista = new HashSet<>();
        if (!tarefaSet.isEmpty()) {
                tarefaSet.clear();
            }
@@ -107,9 +105,10 @@ public class ListaTarefas {
 
        listaTarefas.obterTarefasConcluidas();
        listaTarefas.obterTarefasPendentes();
-        //listaTarefas.limparListaTarefas();
 //        listaTarefas.exibirTarefas();
 //        listaTarefas.marcarTarefaPendente("Limpar a casa");
+        listaTarefas.limparListaTarefas();
         listaTarefas.exibirTarefas();
+
     }
 }
